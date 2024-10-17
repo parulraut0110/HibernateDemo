@@ -72,5 +72,22 @@ Make sure the connection properties (username and password) are correct:
     </session-factory>
 </hibernate-configuration>
 
-
 ```
+
+## Running the Project
+In IDE:
+
+Open the project in your IDE (IntelliJ IDEA, Eclipse).
+Make sure your project is set up correctly.
+Right-click on App.java and select Run 'App.main()'.
+From Command Line:
+
+Navigate to the root of your project in the terminal.
+
+Run the following Maven command:
+
+```bash
+mvn clean compile exec:java -Dexec.mainClass="com.parul.App"
+```
+This will compile the project and execute the main class App.java.
+
