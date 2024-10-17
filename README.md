@@ -190,9 +190,8 @@ Session Management: Always remember to close sessions after completing transacti
 ---
 
 ## LICENSE
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE.md](https://github.com/parulraut0110/DarkModeExtension/blob/main/LICENSE.md) file for details.
 
-The icon used in this project is also licensed under the [Flaticon](https://github.com/parulraut0110/DarkModeExtension/blob/main/icon-licence.pdf).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE.md](https://github.com/parulraut0110/DarkModeExtension/blob/main/LICENSE.md) file for details.
 
 ---
 
@@ -200,7 +199,3 @@ The icon used in this project is also licensed under the [Flaticon](https://gith
 If you need help with using the extension or troubleshooting issues, feel free to reach out to the developer. email: parulraut0110@gmail.com.
 
 ---
-
-## Help 
-
-## License 
