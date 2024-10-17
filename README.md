@@ -16,7 +16,8 @@ hibernate-demo/
 │ │ │ └── Student.java
 │ │ └── resources/
 │ │ └── hibernate.cfg.xml
-├── pom.xml └── README.md
+├── pom.xml
+└── README.md
 
 ```
 
