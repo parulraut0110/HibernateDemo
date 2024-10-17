@@ -133,7 +133,7 @@ This will display all the records in the student table. The output will depend o
 +----+-------+-------------+
 
 ```
-If no records were inserted, the output would simply be an empty set:
+   If no records were inserted, the output would be an empty set:
 
 ```sql
 Empty set (0.00 sec)
