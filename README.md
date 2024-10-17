@@ -122,9 +122,6 @@ The desc (describe) command will show the structure of the student table, reflec
 +-------+-------------+------+-----+---------+-------+
 
 ```
-id: int, primary key (PRI)
-name: varchar(255), nullable
-email: varchar(255), nullable
 
 3. SELECT * FROM student;
 This will display all the records in the student table. The output will depend on the records you insert into the database. For example, if you inserted a student with id = 3 named "Paul" and email "p@gmail.com", the output would be:
