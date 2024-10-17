@@ -65,6 +65,8 @@ hibernate-demo/
 
 In this project, the hibernate.cfg.xml file is located in src/main/resources/.
 
+The external DTD file for Hibernate configuration was downloaded from [hibernate.org](https://hibernate.org/dtd/).
+
 Make sure the connection properties (username and password) are correct:
 
 ```xml
