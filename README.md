@@ -96,6 +96,52 @@ This will compile the project and execute the main class App.java.
 ## Observing Output
 If the configuration and database are set correctly, you will see Hibernate-generated SQL queries in the console, and the output of CRUD operations like fetching or updating student records.
 
+Here's what the output should look like based on your Hibernate configuration and the Student entity:
+
+1. SHOW TABLES;
+Since the Hibernate configuration is set to hbm2ddl.auto=update, a table named student should be automatically created based on your Student class. So, the output would be:
+
+```sql
++----------------+
+| Tables_in_demo |
++----------------+
+| student        |
++----------------+
+
+```
+
+2. DESC student;
+The desc (describe) command will show the structure of the student table, reflecting the fields from your Student class:
+```sql
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | NO   | PRI | NULL    |       |
+| name  | varchar(255)| YES  |     | NULL    |       |
+| email | varchar(255)| YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+
+```
+id: int, primary key (PRI)
+name: varchar(255), nullable
+email: varchar(255), nullable
+
+3. SELECT * FROM student;
+This will display all the records in the student table. The output will depend on the records you insert into the database. For example, if you inserted a student with id = 3 named "Paul" and email "p@gmail.com", the output would be:
+```sql
++----+-------+-------------+
+| id | name  | email       |
++----+-------+-------------+
+|  3 | Paul  | p@gmail.com |
++----+-------+-------------+
+
+```
+If no records were inserted, the output would simply be an empty set:
+
+```sql
+Empty set (0.00 sec)
+```
+
 ## Troubleshooting
 Database Connection Errors: Double-check your MySQL connection URL, username, and password in hibernate.cfg.xml.
 Dependency Errors: Ensure all Maven dependencies are properly added and refreshed.
