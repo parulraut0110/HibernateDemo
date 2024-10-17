@@ -115,6 +115,12 @@ Run the following Maven command:
 ```bash
 mvn clean compile exec:java -Dexec.mainClass="com.parul.App"
 ```
+or
+
+1. Right-click on pom.xml and select Run As then  Maven clean
+2. Right-click on pom.xml and select Run As then Maven install
+3. Right-click on App.java and select Run As then Run on Server.
+
 This will compile the project and execute the main class App.java.
 
 ---
@@ -180,6 +186,18 @@ Empty set (0.00 sec)
 Database Connection Errors: Double-check your MySQL connection URL, username, and password in hibernate.cfg.xml.
 Dependency Errors: Ensure all Maven dependencies are properly added and refreshed.
 Session Management: Always remember to close sessions after completing transactions.
+
+---
+
+## LICENSE
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE.md](https://github.com/parulraut0110/DarkModeExtension/blob/main/LICENSE.md) file for details.
+
+The icon used in this project is also licensed under the [Flaticon](https://github.com/parulraut0110/DarkModeExtension/blob/main/icon-licence.pdf).
+
+---
+
+## Help
+If you need help with using the extension or troubleshooting issues, feel free to reach out to the developer. email: parulraut0110@gmail.com.
 
 ---
 
