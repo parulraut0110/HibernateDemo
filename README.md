@@ -1,7 +1,30 @@
 # Hibernate Demo Project
 
-This simple Hibernate project demonstrates basic CRUD operations using Hibernate ORM with MySQL.
+---
+## Table of Contents
 
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Prerequisites](#prerequisites)
+4. [Database Setup](#database-setup)
+5. [Hibernate Configuration (hibernate.cfg.xml)](#hibernate-configuration-hibernatecfgxml)
+6. [Running the Project](#running-the-project)
+   - [In IDE](#in-ide)
+   - [From Command Line](#from-command-line)
+7. [Observing Output](#observing-output)
+   - [SHOW TABLES](#show-tables)
+   - [DESC student](#desc-student)
+   - [SELECT * FROM student](#select--from-student)
+8. [Troubleshooting](#troubleshooting)
+9. [Help](#help)
+10. [License](#license)
+
+---
+## Introduction
+
+This project demonstrates how to integrate Hibernate ORM with a MySQL database using Java. It includes a simple application for managing Student records, allowing you to create, read, update, and delete student information.
+
+---
 ## Project Structure
 
 ```bash
@@ -20,7 +43,7 @@ hibernate-demo/
 └── README.md
 
 ```
-
+---
 ## Prerequisites
 
 - **Java 17**
@@ -28,7 +51,7 @@ hibernate-demo/
 - **MySQL Server**
 - **MySQL Workbench or any other MySQL client tool**
 - **IDE (IntelliJ IDEA, Eclipse, etc.)**
-
+---
 ## Database Setup
 
 1. Start your MySQL server.
@@ -37,6 +60,7 @@ hibernate-demo/
 ```sql
    CREATE DATABASE demo;
 ```
+---
 ## Hibernate Configuration (hibernate.cfg.xml)
 
 In this project, the hibernate.cfg.xml file is located in src/main/resources/.
@@ -74,6 +98,7 @@ Make sure the connection properties (username and password) are correct:
 </hibernate-configuration>
 
 ```
+---
 
 ## Running the Project
 In IDE:
@@ -92,6 +117,7 @@ mvn clean compile exec:java -Dexec.mainClass="com.parul.App"
 ```
 This will compile the project and execute the main class App.java.
 
+---
 
 ## Observing Output
 If the configuration and database are set correctly, you will see Hibernate-generated SQL queries in the console, and the output of CRUD operations like fetching or updating student records.
@@ -109,6 +135,8 @@ Since the Hibernate configuration is set to hbm2ddl.auto=update, a table named s
 +----------------+
 
 ```
+![image](https://github.com/user-attachments/assets/2ca4d2fc-4cc8-4495-8937-6caf4f599ced)
+
 
 2. DESC student;
 The desc (describe) command will show the structure of the student table, reflecting the fields from your Student class:
@@ -123,6 +151,9 @@ The desc (describe) command will show the structure of the student table, reflec
 
 ```
 
+![image](https://github.com/user-attachments/assets/e7e2dd5e-fc7b-41cb-b329-27f808d0c760)
+
+
 3. SELECT * FROM student;
 This will display all the records in the student table. The output will depend on the records you insert into the database. For example, if you inserted a student with id = 3 named "Paul" and email "p@gmail.com", the output would be:
 ```sql
@@ -133,13 +164,25 @@ This will display all the records in the student table. The output will depend o
 +----+-------+-------------+
 
 ```
+![image](https://github.com/user-attachments/assets/2c5655cc-d8b9-47e4-b779-d78005bed8e9)
+
+
+
    If no records were inserted, the output would be an empty set:
 
 ```sql
 Empty set (0.00 sec)
 ```
 
+---
+
 ## Troubleshooting
 Database Connection Errors: Double-check your MySQL connection URL, username, and password in hibernate.cfg.xml.
 Dependency Errors: Ensure all Maven dependencies are properly added and refreshed.
 Session Management: Always remember to close sessions after completing transactions.
+
+---
+
+## Help 
+
+## License 
