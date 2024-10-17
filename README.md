@@ -95,3 +95,8 @@ This will compile the project and execute the main class App.java.
 
 ## Observing Output
 If the configuration and database are set correctly, you will see Hibernate-generated SQL queries in the console, and the output of CRUD operations like fetching or updating student records.
+
+## Troubleshooting
+Database Connection Errors: Double-check your MySQL connection URL, username, and password in hibernate.cfg.xml.
+Dependency Errors: Ensure all Maven dependencies are properly added and refreshed.
+Session Management: Always remember to close sessions after completing transactions.
