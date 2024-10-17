@@ -1,6 +1,6 @@
 # Hibernate Demo Project
 
-This is a simple Hibernate project that demonstrates basic CRUD operations using Hibernate ORM with MySQL.
+This simple Hibernate project demonstrates basic CRUD operations using Hibernate ORM with MySQL.
 
 ## Project Structure
 
@@ -92,3 +92,6 @@ mvn clean compile exec:java -Dexec.mainClass="com.parul.App"
 ```
 This will compile the project and execute the main class App.java.
 
+
+## Observing Output
+If the configuration and database are set correctly, you will see Hibernate-generated SQL queries in the console, and the output of CRUD operations like fetching or updating student records.
