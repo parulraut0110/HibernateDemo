@@ -1,5 +1,4 @@
 # Hibernate Demo Project
-
 ---
 
 ## Table of Contents
