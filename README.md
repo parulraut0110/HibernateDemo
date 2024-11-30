@@ -1,6 +1,7 @@
 # Hibernate Demo Project
 
 ---
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -20,11 +21,13 @@
 10. [License](#license)
 
 ---
+
 ## Introduction
 
 This project demonstrates how to integrate Hibernate ORM with a MySQL database using Java. It includes a simple application for managing Student records, allowing you to create, read, update, and delete student information.
 
 ---
+
 ## Project Structure
 
 ```bash
@@ -44,6 +47,7 @@ hibernate-demo/
 
 ```
 ---
+
 ## Prerequisites
 
 - **Java 17**
